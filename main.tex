@@ -1,0 +1,18 @@
+\input{components/preamble.tex}
+\input{components/curve.tex}
+\begin{document}
+\begin{inctext}
+    \begin{tikzpicture}
+        \begin{scope}[
+                mindmap,
+                grow cyclic,
+                concept color=black,
+                every child/.append style={text width=4cm, level distance=7cm,font=\fontsize{10pt}{12pt}, concept color=beige},
+                every node/.append style={concept,circular drop shadow},
+            ]
+            \input{components/nodes.tex}
+            \input{components/arrows.tex}
+        \end{scope}
+    \end{tikzpicture}
+\end{inctext}
+\end{document}
